@@ -1,0 +1,35 @@
+[project]
+name = "titanic-mle"
+version = "0.1.0"
+description = "Titanic ML starter environment for Codex and JupyterLab communication through MCP"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "jupyter-collaboration>=4.0.2",
+    "jupyterlab>=4.4.1",
+    "jupyter-mcp-tools>=0.1.6",
+    "notebook>=7.4.1",
+    "pycrdt<0.12.50",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter-mcp-server>=1.0.0",
+    "pytest>=8.3.5",
+    "ruff>=0.11.7",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[build-system]
+requires = ["hatchling>=1.24.2"]
+build-backend = "hatchling.build"
