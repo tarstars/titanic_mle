@@ -6,3 +6,10 @@ __pycache__/
 .jupyter_ystore.db
 .ipynb_checkpoints/
 .DS_Store
+data/interim/*
+!data/interim/README.md
+data/processed/*
+!data/processed/README.md
+models/mle_trees/*
+!models/mle_trees/README.md
+rust/**/target/

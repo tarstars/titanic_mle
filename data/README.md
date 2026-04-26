@@ -1,10 +1,16 @@
 # Data Directory
 
-Put your local Titanic CSV files here.
+This repository uses a three-stage data layout:
 
-Expected filenames:
+- `data/raw/`: original copied source files
+- `data/interim/`: cleaned or partially transformed working tables
+- `data/processed/`: modeling-ready outputs
+- `data/submissions/`: Kaggle-ready submission CSVs and submission metadata
 
-- `train.csv`
-- `test.csv`
+For Titanic, the canonical raw files are:
 
-This repository does not vendor Kaggle data into git.
+- `data/raw/train.csv`
+- `data/raw/test.csv`
+- `data/raw/gender_submission.csv`
+
+Raw files should stay as close to the source dataset as possible.

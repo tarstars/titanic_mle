@@ -1,0 +1,168 @@
+{
+  "experiment": "prepare_kaggle_submissions",
+  "competition": "titanic",
+  "metric_target": "accuracy",
+  "train_dataset": "/home/tarstars/prj/titanic_mle/data/interim/titanic_unit_interval_train.csv",
+  "test_dataset": "/home/tarstars/prj/titanic_mle/data/interim/titanic_unit_interval_test.csv",
+  "folds": 5,
+  "seed": 20260420,
+  "selected_submissions": {
+    "catboost": {
+      "family": "catboost",
+      "candidate_id": "d4_lr006_l230_b3",
+      "source_report": null,
+      "threshold": 0.5451145089065665,
+      "oof_accuracy": 0.8327721661054994,
+      "train_accuracy": 0.8540965207631874,
+      "train_auc": 0.9144457226855847,
+      "train_logloss": 0.3532610881732644,
+      "oof_auc": 0.8694889165841136,
+      "oof_logloss": 0.4139430754448254,
+      "test_positive_count": 127,
+      "submission_path": "/home/tarstars/prj/titanic_mle/data/submissions/catboost_d4_lr006_l230_b3_submission.csv"
+    },
+    "eml": {
+      "family": "eml",
+      "candidate_id": "meta_ga_top12_auc_iter1",
+      "source_report": "/home/tarstars/prj/titanic_mle/data/processed/ga_meta_stacked_top12__lib12_iter1__auc_calibrated_logloss.json",
+      "threshold": 0.3001438137765018,
+      "oof_accuracy": 0.8237934904601572,
+      "train_accuracy": 0.8215488215488216,
+      "train_auc": 0.8719175747504767,
+      "train_logloss": 0.44340816545406947,
+      "oof_auc": 0.8692519093727031,
+      "oof_logloss": 0.4443458265611179,
+      "test_positive_count": 152,
+      "submission_path": "/home/tarstars/prj/titanic_mle/data/submissions/eml_meta_ga_top12_auc_iter1_submission.csv"
+    }
+  },
+  "best_aliases": {
+    "catboost": "/home/tarstars/prj/titanic_mle/data/submissions/catboost_best_submission.csv",
+    "eml": "/home/tarstars/prj/titanic_mle/data/submissions/eml_best_submission.csv"
+  },
+  "family_candidates": {
+    "catboost": [
+      {
+        "family": "catboost",
+        "candidate_id": "d4_lr006_l230_b3",
+        "source_report": null,
+        "threshold": 0.5451145089065665,
+        "oof_accuracy": 0.8327721661054994,
+        "train_accuracy": 0.8540965207631874,
+        "train_auc": 0.9144457226855847,
+        "train_logloss": 0.3532610881732644,
+        "oof_auc": 0.8694889165841136,
+        "oof_logloss": 0.4139430754448254,
+        "test_positive_count": 127,
+        "submission_path": "/home/tarstars/prj/titanic_mle/data/submissions/catboost_d4_lr006_l230_b3_submission.csv"
+      },
+      {
+        "family": "catboost",
+        "candidate_id": "baseline_depth6_lr005",
+        "source_report": null,
+        "threshold": 0.5651424407412451,
+        "oof_accuracy": 0.8282828282828283,
+        "train_accuracy": 0.936026936026936,
+        "train_auc": 0.9840645937856176,
+        "train_logloss": 0.19293148773042124,
+        "oof_auc": 0.8604267195006338,
+        "oof_logloss": 0.4478909087053915,
+        "test_positive_count": 134,
+        "submission_path": "/home/tarstars/prj/titanic_mle/data/submissions/catboost_baseline_depth6_lr005_submission.csv"
+      },
+      {
+        "family": "catboost",
+        "candidate_id": "d3_lr005_l230_b5",
+        "source_report": null,
+        "threshold": 0.5392919697862881,
+        "oof_accuracy": 0.8271604938271605,
+        "train_accuracy": 0.8630751964085297,
+        "train_auc": 0.9105231201866232,
+        "train_logloss": 0.35787768481900134,
+        "oof_auc": 0.8703783593774965,
+        "oof_logloss": 0.41476742946693396,
+        "test_positive_count": 135,
+        "submission_path": "/home/tarstars/prj/titanic_mle/data/submissions/catboost_d3_lr005_l230_b5_submission.csv"
+      },
+      {
+        "family": "catboost",
+        "candidate_id": "d3_lr003_l280_b8",
+        "source_report": null,
+        "threshold": 0.5129073178763068,
+        "oof_accuracy": 0.8260381593714927,
+        "train_accuracy": 0.8552188552188552,
+        "train_auc": 0.9033143727564205,
+        "train_logloss": 0.37087479606944523,
+        "oof_auc": 0.8690521841945483,
+        "oof_logloss": 0.416813282665077,
+        "test_positive_count": 144,
+        "submission_path": "/home/tarstars/prj/titanic_mle/data/submissions/catboost_d3_lr003_l280_b8_submission.csv"
+      }
+    ],
+    "eml": [
+      {
+        "family": "eml",
+        "candidate_id": "meta_ga_top12_auc_iter1",
+        "source_report": "/home/tarstars/prj/titanic_mle/data/processed/ga_meta_stacked_top12__lib12_iter1__auc_calibrated_logloss.json",
+        "threshold": 0.3001438137765018,
+        "oof_accuracy": 0.8237934904601572,
+        "train_accuracy": 0.8215488215488216,
+        "train_auc": 0.8719175747504767,
+        "train_logloss": 0.44340816545406947,
+        "oof_auc": 0.8692519093727031,
+        "oof_logloss": 0.4443458265611179,
+        "test_positive_count": 152,
+        "submission_path": "/home/tarstars/prj/titanic_mle/data/submissions/eml_meta_ga_top12_auc_iter1_submission.csv"
+      },
+      {
+        "family": "eml",
+        "candidate_id": "meta_ga_auc_iter3",
+        "source_report": "/home/tarstars/prj/titanic_mle/data/processed/ga_meta_stacked_top5__iter3__auc.json",
+        "threshold": 0.35006093489223367,
+        "oof_accuracy": 0.8092031425364759,
+        "train_accuracy": 0.8080808080808081,
+        "train_auc": 0.8592922804887142,
+        "train_logloss": 0.4405770001100263,
+        "oof_auc": 0.8574761128686926,
+        "oof_logloss": 0.44174215567872116,
+        "test_positive_count": 143,
+        "submission_path": "/home/tarstars/prj/titanic_mle/data/submissions/eml_meta_ga_auc_iter3_submission.csv"
+      },
+      {
+        "family": "eml",
+        "candidate_id": "exact_top5_auc",
+        "source_report": "/home/tarstars/prj/titanic_mle/data/processed/meta_stacked_exact_search_top5_height_le_3.json",
+        "threshold": 0.6039767193189741,
+        "oof_accuracy": 0.8092031425364759,
+        "train_accuracy": 0.8080808080808081,
+        "train_auc": 0.8533005251440684,
+        "train_logloss": 0.46774814604350906,
+        "oof_auc": 0.8337940327442772,
+        "oof_logloss": 0.46853323805282654,
+        "test_positive_count": 144,
+        "submission_path": "/home/tarstars/prj/titanic_mle/data/submissions/eml_exact_top5_auc_submission.csv"
+      },
+      {
+        "family": "eml",
+        "candidate_id": "meta_ga_calibrated_logloss_iter4",
+        "source_report": "/home/tarstars/prj/titanic_mle/data/processed/ga_meta_stacked_top5__iter4__calibrated_logloss.json",
+        "threshold": 0.5769675524005908,
+        "oof_accuracy": 0.8080808080808081,
+        "train_accuracy": 0.8058361391694725,
+        "train_auc": 0.858488053771344,
+        "train_logloss": 0.43113955880324045,
+        "oof_auc": 0.8544030081274833,
+        "oof_logloss": 0.43258110246815823,
+        "test_positive_count": 123,
+        "submission_path": "/home/tarstars/prj/titanic_mle/data/submissions/eml_meta_ga_calibrated_logloss_iter4_submission.csv"
+      }
+    ]
+  },
+  "skipped_eml_candidates": [
+    {
+      "candidate_id": "meta_ga_top12_calibrated_logloss_iter2",
+      "source_report": "/home/tarstars/prj/titanic_mle/data/processed/ga_meta_stacked_top12__lib12_iter2__calibrated_logloss.json",
+      "reason": "log domain"
+    }
+  ]
+}

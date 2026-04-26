@@ -1,0 +1,40 @@
+[package]
+name = "eml-tree-search"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Rust search engine for discrete EML tree experiments in titanic_mle"
+
+[dependencies]
+csv = "1.3"
+rand = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[[bin]]
+name = "count-sex-embarked"
+path = "src/bin/count_sex_embarked.rs"
+
+[[bin]]
+name = "search-sex-embarked-metrics"
+path = "src/bin/search_sex_embarked_metrics.rs"
+
+[[bin]]
+name = "branch-bound-sex-embarked-logloss"
+path = "src/bin/branch_bound_sex_embarked_logloss.rs"
+
+[[bin]]
+name = "pairwise-top10-expressions"
+path = "src/bin/pairwise_top10_expressions.rs"
+
+[[bin]]
+name = "ga-best-expression"
+path = "src/bin/ga_best_expression.rs"
+
+[[bin]]
+name = "meta-stacked-exact-search"
+path = "src/bin/meta_stacked_exact_search.rs"
+
+[[bin]]
+name = "ga-meta-stacked-expression"
+path = "src/bin/ga_meta_stacked_expression.rs"
